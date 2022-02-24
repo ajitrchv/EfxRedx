@@ -12,8 +12,8 @@ const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false);
 ////////////Using useffect==============================================================
   useEffect(() => {
-    //const timerx = setTimeout(() => {
-      console.log('validity check');
+    const timerx = setTimeout(() => {
+      //console.log('validity check');
       setFormIsValid(
         enteredEmail.includes('@') && enteredPassword.trim().length > 6
       );
